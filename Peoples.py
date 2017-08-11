@@ -9,6 +9,7 @@ class Match_Condition:
     Degree=["高中","大学","研究生","博士"]
     Apparance=["Bad","Average","Good"]
     Salary_Rate=["Low","Middle","High"]
+    Food_Type=["川菜","粤菜","温州菜","江浙菜","黑洞料理"]
 
 class People:
     def __init__(self,name = None, age = None, Grow_Loc = None,Work_Loc=None,Degree=None,Apparance=None,Salary_Rate=None):
@@ -52,3 +53,9 @@ class People:
         for n in range (0,len(Match_Condition.Salary_Rate)):
             print n,Match_Condition.Salary_Rate[n],
         self.Salary_Rate = int(raw_input())
+
+        print "请对你喜欢菜的类型做一个排序 ：）: "
+        for n in range (0,len(Match_Condition.Food_Type)):
+            print n,Match_Condition.Food_Type[n],
+        self.Food_Type_Order=raw_input()
+
